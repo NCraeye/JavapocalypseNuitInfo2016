@@ -5,6 +5,19 @@
     <title>UserStories</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        ul {
+            counter-reset: section;
+        }
+
+        li::before {
+            counter-increment: section;
+            content:"US" counter(section)" = ";
+        }
+        tr{
+            counter-increment: idUS;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -20,15 +33,34 @@
 </div>
     <!-- content -->
     <div class="container">
-        <h1>Procédure Interne</h1>
+        <h1>UserStories Site</h1>
         <p>
-            <ul>
-                <li>Récupérer le code : <a target="_blank" href="https://github.com/NCraeye/JavapocalypseNuitInfo2016">le GitHub</a></li>
-                <li>prendre une tache dans sprints/sprintN/kanban.html </li>
-                <li>travailler sur sa branche du site pour tester : razius33.com/ndi2016/devs/[prenom] (connection au site via filezilla : infos dans la conv facebook)</li>
-                <li>pull le git, régler les conflits</li>
-                <li>push sur le git</li>
-                <li>placer le code fonctionnel dans razius33/ndi2016/final</li>
+            En tant que visiteur, l'utilisateur pourra :
+           <ul class="list-group">
+<!--
+        chaque <li></li> sera précédé de USX = ,
+        où X est le numéro de l'US.
+-->
+           
+            <li class="list-group-item">accéder à une liste des sites officiels pouvant répondre aux besoins d'un réfugié ;</li>
+            <li class="list-group-item">accéder à une carte Google Map lui indiquant l'itinéraire vers un lieu d'aide aux réfugiés parmis ceux répertoriés sur le site, depuis sa position ;</li>
+            </ul>
+        </p>
+    </div>
+    <div class="container">
+        <h1>UserStories MediTruck</h1>
+        <p>
+            MediTruck est un infinite runner où le joueur contrôle un camion distribuant des médicaments.
+            </br>
+            En tant que joueur, l'utilisateur pourra :
+           <ul class="list-group">
+<!--
+        chaque <li></li> sera précédé de USX = ,
+        où X est le numéro de l'US.
+-->
+           
+                <li class="list-group-item">déplacer le camion de droite à gauche ;</li>
+                <li class="list-group-item">percuter des obstacles afin de perdre la partie ;</li>
             </ul>
         </p>
     </div>
